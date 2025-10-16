@@ -1,20 +1,16 @@
 package glfont
 
-import (
-	"io"
-)
-
 type FontRenderer interface {
 	LoadFont(file string, scale int32, windowWidth int, windowHeight int) (Font, error)
-	LoadTrueTypeFont(program uint32, r io.Reader, scale int32, low, high rune, dir Direction) (Font, error)
-	newProgram(GLSLVersion uint, vertexShaderSource, fragmentShaderSource string) (uint32, error)
+	//LoadTrueTypeFont(program uint32, r io.Reader, scale int32, low, high rune, dir Direction) (Font, error)
+	//newProgram(GLSLVersion uint, vertexShaderSource, fragmentShaderSource string) (uint32, error)
 }
 
 type Font interface {
 	SetColor(red float32, green float32, blue float32, alpha float32)
 	UpdateResolution(windowWidth int, windowHeight int)
 	Printf(x, y float32, scale float32, align int32, blend bool, window [4]int32, fs string, argv ...interface{}) error
-	renderGlyphBatch(batchChars []*character, indices []rune, vertices []float32)
+	//renderGlyphBatch(batchChars []*character, indices []rune, vertices []float32)
 	Width(scale float32, fs string, argv ...interface{}) float32
 }
 

@@ -7,8 +7,11 @@ import (
 	gl "github.com/go-gl/gl/v3.2-core/gl"
 )
 
+func (r *FontRenderer_GL32) Init() {
+}
+
 // LoadFont loads the specified font at the given scale.
-func (r *FontRenderer_GL32) LoadFont(file string, scale int32, windowWidth int, windowHeight int) (Font, error) {
+func (r *FontRenderer_GL32) LoadFont(file string, scale int32, windowWidth int, windowHeight int) (interface{}, error) {
 	fd, err := os.Open(file)
 	if err != nil {
 		return nil, err
