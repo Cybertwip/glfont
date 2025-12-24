@@ -1,4 +1,4 @@
-	package glfont
+package glfont
 
 import (
 	"fmt"
