@@ -11,7 +11,7 @@ func (r *FontRenderer_GL21) Init() {
 }
 
 // LoadFont loads the specified font at the given scale.
-func (r *FontRenderer_GL21) LoadFont(file string, scale int32, windowWidth int, windowHeight int) (glfont.Font, error) {
+func (r *FontRenderer_GL21) LoadFont(file string, scale int32, windowWidth int, windowHeight int) (interface{}, error) {
 	fd, err := os.Open(file)
 	if err != nil {
 		return nil, err
