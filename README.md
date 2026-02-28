@@ -4,7 +4,7 @@
     Author  : Noah Shibley, http://socialhardware.net                       
     Date    : June 16th 2016                                 
     Notes   : A modern opengl text rendering library for golang
-    Dependencies:   freetype, go-gl, glfw
+    Dependencies:   freetype, gonutz, glfw
 
 ***
 # Function List:
@@ -72,8 +72,8 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/go-gl/gl/all-core/gl"
-	"github.com/go-gl/glfw/v3.1/glfw"
+	"github.com/gonutz/gl/all-core/gl"
+	"github.com/gonutz/glfw/v3.1/glfw"
 	"github.com/nullboundary/glfont"
 )
 
