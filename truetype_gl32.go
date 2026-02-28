@@ -7,7 +7,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	gl "github.com/go-gl/gl/v3.2-core/gl"
+	gl "github.com/gonutz/gl/v3.2-core/gl"
 	"github.com/golang/freetype"
 	"github.com/golang/freetype/truetype"
 	"golang.org/x/image/font"

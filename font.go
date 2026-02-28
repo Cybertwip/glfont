@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-gl/gl/v2.1/gl"
+	"github.com/gonutz/gl/v2.1/gl"
 )
 
 func (r *FontRenderer_GL21) Init() {

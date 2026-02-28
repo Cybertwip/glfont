@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	gl "github.com/go-gl/gl/v3.2-core/gl"
+	gl "github.com/gonutz/gl/v3.2-core/gl"
 )
 
 // newProgram links the frag and vertex shader programs
